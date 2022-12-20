@@ -1,4 +1,4 @@
-import imggg from "../assets/images/trackit-logo.png";
+import imggg from "../Assets/Images/trackit-logo.png";
 import { NavBarPage } from "./ComponentStyle";
 
 export default function NavBar() {

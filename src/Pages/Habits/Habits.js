@@ -1,5 +1,5 @@
-import NavBar from "../../components/NavBar";
-import Menu from "../../components/Menu";
+import NavBar from "../../Components/NavBar";
+import Menu from "../../Components/Menu";
 import { HabitsPage, AddHabit, HabitsHeader } from "./HabitStyle";
 
 export default function Habits() {

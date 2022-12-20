@@ -1,4 +1,4 @@
-import logo from "../../assets/images/trackit-logo.png";
+import logo from "../../Assets/Images/trackit-logo.png";
 import RegisterPage from "./RegisterStyle";
 
 export default function Register() {
