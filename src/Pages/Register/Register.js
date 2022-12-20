@@ -37,6 +37,7 @@ export default function Register() {
 
       <form onSubmit={handleSubmit}>
         <input
+          data-test="email-input"
           type="email"
           name="email"
           onChange={handleChange}
@@ -45,6 +46,7 @@ export default function Register() {
           required
         />
         <input
+          data-test="password-input"
           type="password"
           name="password"
           onChange={handleChange}
@@ -53,6 +55,7 @@ export default function Register() {
           required
         />
         <input
+          data-test="user-name-input"
           type="name"
           name="name"
           onChange={handleChange}
@@ -61,6 +64,7 @@ export default function Register() {
           required
         />
         <input
+          data-test="user-image-input"
           type="text"
           name="image"
           onChange={handleChange}
@@ -68,8 +72,12 @@ export default function Register() {
           placeholder="foto"
           required
         />
-        <button type="submit">Cadastrar</button>
-        <Link to="/">Já tem uma conta? Faça login!</Link>
+        <button data-test="signup-btn" type="submit">
+          Cadastrar
+        </button>
+        <Link data-test="login-link" to="/">
+          Já tem uma conta? Faça login!
+        </Link>
       </form>
     </RegisterPage>
   );

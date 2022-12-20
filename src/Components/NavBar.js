@@ -3,7 +3,7 @@ import { NavBarPage } from "./ComponentStyle";
 
 export default function NavBar() {
   return (
-    <NavBarPage>
+    <NavBarPage data-test="header">
       <h1>TrackIt</h1>
       <img src={imggg} />
     </NavBarPage>

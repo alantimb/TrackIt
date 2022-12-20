@@ -57,17 +57,8 @@ const MenuPage = styled.div`
       font-style: normal;
       line-height: 22px;
     }
+
     :nth-child(2) {
-      color: #ffffff;
-      background-color: #52b6ff;
-      border: 1px solid #ffffff;
-      font-family: "Lexend Deca", sans-serif;
-      font-weight: 400;
-      font-size: 18px;
-      font-style: normal;
-      line-height: 22px;
-    }
-    :nth-child(3) {
       color: #126ba5;
       background-color: #ffffff;
       border: 1px solid #ffffff;

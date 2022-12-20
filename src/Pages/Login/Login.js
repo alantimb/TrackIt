@@ -13,7 +13,7 @@ export default function Login(body) {
 
   useEffect(() => {
     if (auth && auth.token) {
-      navigate("/today");
+      navigate("/hoje");
     }
   }, []);
 
@@ -24,7 +24,7 @@ export default function Login(body) {
     promise
       .then((res) => {
         login(res.data);
-        navigate("/today");
+        navigate("/hoje");
       })
       .catch(() => {
         alert("Algo deu errado. Recarregue a página e tente novamente!");
@@ -41,6 +41,7 @@ export default function Login(body) {
 
       <form onSubmit={handleSubmit}>
         <input
+          data-test="email-input"
           type="email"
           name="email"
           value={formLogin.email}
@@ -49,6 +50,7 @@ export default function Login(body) {
           required
         />
         <input
+          data-test="password-input"
           type="password"
           name="password"
           value={formLogin.password}
@@ -56,8 +58,12 @@ export default function Login(body) {
           onChange={handleChange}
           required
         />
-        <button type="submit">Entrar</button>
-        <Link to="/cadastro">Não tem uma conta? Cadastre-se!</Link>
+        <button data-test="login-btn" type="submit">
+          Entrar
+        </button>
+        <Link data-test="signup-link" to="/cadastro">
+          Não tem uma conta? Cadastre-se!
+        </Link>
       </form>
     </LoginPage>
   );
