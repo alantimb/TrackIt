@@ -1,8 +1,7 @@
 import logo from "../../Assets/Images/trackit-logo.png";
 import LoginPage from "./LoginStyle";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import AppContext from "../../Contexts/AppContext";
 import API from "../../API/API";
 import { Link } from "react-router-dom";
 import useAuth from "../../Components/useAuth";
@@ -40,7 +39,7 @@ export default function Login(body) {
     <LoginPage>
       <img src={logo} alt="logo trackit" />
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type="email"
           name="email"

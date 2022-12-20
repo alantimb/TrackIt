@@ -64,7 +64,7 @@ const LoginPage = styled.div`
       font-weight: 400;
       line-height: 18px;
       font-size: 14px;
-      color: #52b6ff
+      color: #52b6ff;
     }
   }
 `;
